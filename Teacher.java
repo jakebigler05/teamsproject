@@ -3,12 +3,10 @@ import java.io.Serializable;
 public class Teacher implements Serializable {
     private String teacherName;
     private int yearsExperience;
-    private String classesTeaching;
-
-    public Teacher(String name, int experience, String classes){
+  
+    public Teacher(String name, int experience){
         this.teacherName = name;
         this.yearsExperience = experience;
-        this.classesTeaching = classes;
     }
     public String getTeacherName(){
         return teacherName;
@@ -22,19 +20,4 @@ public class Teacher implements Serializable {
     public void setYearsExperience(int experience){
         yearsExperience = experience;
     }
-    public String getClassesTeaching(){
-        return classesTeaching;
-    }
-    public void setClassesTeaching(String classes){
-        classesTeaching = classes;
-    }
-    // public String addCourse(){
-    //     return
-    // }
-    // public String removeCourse(){
-    //     return
-    // }
-    // public String toString(){
-    //     return
-    // }
 }

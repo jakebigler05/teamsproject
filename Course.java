@@ -1,6 +1,6 @@
 import java.io.Serializable;
 
-public class Course implements Serializable{
+public class Course implements Serializable, Cloneable{
     private String subjectName;
     private String teacherName;
     private int gradeNum;
@@ -16,6 +16,13 @@ public class Course implements Serializable{
         this.teacherName = teacher;
         this.gradeNum = grade;
         this.currentlyTaken = current;
+    }
+    public Course clone() {
+        try {
+            return (Course) super.clone();
+        } catch (Exception e) {
+        }
+        return null;
     }
     public String getSubjectName(){
         return subjectName;
@@ -41,8 +48,8 @@ public class Course implements Serializable{
     public void setCurrentlyTaken(boolean current){
         currentlyTaken = current;
     }
-    // public String toString(){
-    //     return
-    // }
+    public String toString(){
+        return subjectName + " by " + teacherName + " Grade: " + gradeNum;
+    }
 }
 

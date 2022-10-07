@@ -6,11 +6,9 @@ public class Student implements Serializable {
     private String classesName;
     private String favTeacher;
 
-    public Student(String student, int grade, String classes, String favorite){
+    public Student(String student, int grade){
         this.studentName = student;
         this.gradeLevel = grade;
-        this.classesName = classes;
-        this.favTeacher = favorite;
     }
     public String getStudentName(){
         return studentName;
@@ -36,19 +34,13 @@ public class Student implements Serializable {
     public void setFavTeacher(String favorite){
         favTeacher = favorite;
     }
-//     public String getBestClass(){
-//         return 
-//     }
-//     public String calculateGPA(){
-//         return
-//     }
 //     public String addCourse(){
 //         return
 //     }
 //     public String removeCourse(){
 //         return
 //     }
-//     public String toString(){
-//         return
-//     }
+    public String toString(){
+        return "Name: " + studentName + "\nGrade Level: " + gradeLevel;
+    }
 }
