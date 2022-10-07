@@ -36,10 +36,21 @@ public class TEAMS{
 
 
         //############## MAIN MENU STARTS HERE ##############
-        int ans = 0;
+        System.out.println("Welcome to TEAMS: Type the number corresponding to what you require");
+        int choice = 1;
+        while(choice > 0){
+            System.out.println("OPTION 1:");
+            System.out.println("OPTION 2:");
+            System.out.println("OPTION 3:");
+            System.out.println("OPTION 0:");
+            System.out.println();
 
-        while(ans != -1){
-            System.out.println("1. ");
+            System.out.println("Choice:");
+            choice = sc.nextInt();
+            sc.nextLine();
+            while(choice == 1){
+                System.out.println("HELLO");
+            }
         }
         
 

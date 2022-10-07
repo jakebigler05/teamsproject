@@ -17,5 +17,32 @@ public class Course implements Serializable{
         this.gradeNum = grade;
         this.currentlyTaken = current;
     }
+    public String getSubjectName(){
+        return subjectName;
+    }
+    public void setSubjectName(String subject){
+        subjectName = subject;
+    }
+    public String getTeacherName(){
+        return teacherName;
+    }
+    public void setTeacherName(String teacher){
+        teacherName = teacher;
+    }
+    public int getGradeNum(){
+        return gradeNum;
+    }
+    public void setGradeNum(int grade){
+        gradeNum = grade;
+    }
+    public boolean getCurrentlyTaken(){
+        return currentlyTaken;
+    }
+    public void setCurrentlyTaken(boolean current){
+        currentlyTaken = current;
+    }
+    // public String toString(){
+    //     return
+    // }
 }
 
